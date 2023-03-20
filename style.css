@@ -1,0 +1,268 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    background: #f04fa7;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+#menuimg {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin: 20px 50px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+    font-family: 'Lucida Console';
+    font-size: 24px;
+}
+
+.features{
+    position: absolute;
+    top: 150px;
+    left:12%;
+    width: 200px;
+}
+
+.lip{
+    position: absolute;
+}
+
+.lips {
+
+    animation: blink 1s infinite;
+    animation-delay: 0s;
+    animation-direction: linear;
+    position: absolute;
+    margin-left: -50px;
+}
+
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .1
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        color: #913831;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80%,90%,92.1%,100% {
+        color: #fff;
+        text-shadow: 0 0 10px #e06e65, 
+                     0 0 20px #e06e65, 
+                     0 0 40px #e06e65, 
+                     0 0 80px #e06e65, 
+                     0 0 100px #e06e65;
+    }
+}
+
+.headline {
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 50%;
+    padding-left: 100px;
+}
+
+ .headline h1{
+     font-size: 150px;
+     font-weight: 700;
+     font-family: 'Lucida Console';
+     color: #913831;
+     animation: animate 3s linear infinite;
+ }
+ .headline h2{
+     font-size: 50px;
+     font-weight: 600;
+     font-family: 'Lucida Console';
+ }
+
+ .headline p{
+     font-family: 'Lucida Console';
+     padding-top: 20px;
+     padding-bottom: 70px;
+ }
+
+.headline a {
+    text-decoration: none;
+    font-family: 'Lucida Console';
+    background: #fbba21;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.headline a:hover {
+    background: #35FFE0;
+    font-weight: 900;
+}
+
+#product1 {
+    text-align: center;
+    padding: 20px 10px 5px 60px;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .h2{
+    font-size: 60px;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid #808080;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1 .pro img{
+    border-radius: 20px;
+    object-fit: cover;
+    float: left;
+    width:  100px;
+    height: 100px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 15px;
+    object-fit: cover;
+}
+
+#product1 .pro .des span{
+    font-size: 15px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    font-size: 20px;
+}
+
+#product1 .pro .des i{
+    color: #ffb3ba;
+}
+
+#product1 .pro .des h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #66023C;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("Newsletter.png");
+    background-position: 20% 30%;
+    background-color: #ebcaac;
+    padding: 80px 50px;
+}
+#newsletter .newstext{
+    margin-left: 60px;
+    color: chartreuse;
+}
+
+#newsletter .newstext h4{
+    font-size: 40px;
+    font-family: 'Lucida Console';
+    padding: 5px 0 15px 5px;
+    background-color: cadetblue;
+}
+
+#newsletter .newstext p{
+    font-size: 20px;
+    font-family: 'Lucida Console';
+    background-color: cadetblue;
+    padding: 5px 10px;
+}
+
+#newsletter input{
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    width: 60%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+::placeholder{
+    font-family:'Lucida Console';
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter button{
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Lucida Console';
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color: chartreuse;
+    white-space:nowrap;
+    color: cadetblue;
+}
+
+#newsletter button:hover{
+    background-color: cadetblue;
+    color: chartreuse;
+}
